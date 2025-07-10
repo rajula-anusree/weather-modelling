@@ -1,0 +1,20 @@
+# Quadratic Equation: ax^2 + bx + c = 0
+import math
+
+# Hardcoded values
+a = 1
+b = -3
+c = 2
+
+# Calculate roots
+discriminant = b**2 - 4*a*c
+
+if discriminant > 0:
+    root1 = (-b + math.sqrt(discriminant)) / (2*a)
+    root2 = (-b - math.sqrt(discriminant)) / (2*a)
+    print("Roots are real and different:", root1, root2)
+elif discriminant == 0:
+    root = -b / (2*a)
+    print("Roots are real and same:", root)
+else:
+    print("Roots are complex")
